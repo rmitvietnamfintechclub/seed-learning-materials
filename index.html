@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
   <title>Qui Huynh Resume</title>
 </head>
 
 <body>
-  <header>
-    <h1><strong>Qui Huynh</strong></h1>
-    <img src="../images/profile.png" alt="Qui Huynh's Profile Picture" width="150">
-    <p><em>Welcome to my personal resume</em></p>
+  <header id="header">
+    <h1 class="name"><strong>Qui Huynh</strong></h1>
+    <img src="../images/profile.png" alt="Qui Huynh's Profile Picture" class="profile-img" width="150">
+    <p class="welcome-text"><em>Welcome to my personal resume</em></p>
   </header>
 
-  <nav>
-    <ul>
+  <nav id="navigation">
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -24,47 +25,41 @@
     </ul>
   </nav>
 
-  <main>
-    <section id="about">
+  <main id="main-content">
+    <section id="about" class="section">
       <h2>About Me</h2>
       <p><em>Passionate about web development and creating impactful user experiences.</em></p>
-
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section">
       <h2>Skills</h2>
-      <ul>
-        <li><strong>HTML, CSS, JavaScript</strong> - Core technologies for web development, used to create interactive
-          and responsive user interfaces.</li>
-        <li><strong>Python, Java</strong> - Experienced in backend development and problem-solving using these
-          programming languages.</li>
-        <li><strong>UI/UX Design</strong> - Skilled in designing user-centric interfaces that enhance usability and
-          engagement.</li>
+      <ul class="skill-list">
+        <li><strong>HTML, CSS, JavaScript</strong> - Core technologies for web development.</li>
+        <li><strong>Python, Java</strong> - Experienced in backend development and problem-solving.</li>
+        <li><strong>UI/UX Design</strong> - Skilled in designing user-centric interfaces.</li>
       </ul>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="section">
       <h2>Experience</h2>
-      <article>
+      <article class="experience-item">
         <h3>Web Developer at Tech Solutions</h3>
-        <p><strong>Developed and maintained websites</strong> for clients across various industries, ensuring high
-          performance and user satisfaction.</p>
+        <p><strong>Developed and maintained websites</strong> for clients across various industries.</p>
       </article>
-      <article>
+      <article class="experience-item">
         <h3>Intern at Code Lab</h3>
-        <p><strong>Assisted in developing responsive web designs</strong> and debugging code, gaining hands-on
-          experience in frontend development.</p>
+        <p><strong>Assisted in developing responsive web designs</strong> and debugging code.</p>
       </article>
     </section>
 
-    <aside>
+    <aside id="portfolio">
       <h2>Portfolio</h2>
       <a href="https://myportfolio.com"><strong>View my projects</strong></a>
     </aside>
 
-    <section id="education">
+    <section id="education" class="section">
       <h2>Education</h2>
-      <table border="1">
+      <table class="education-table" border="1">
         <thead>
           <tr>
             <th>Degree</th>
@@ -87,18 +82,19 @@
       </table>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:qui.huynh@example.com"><strong>qui.huynh@example.com</strong></a></p>
-      <p>Phone: <a href="tel:+1234567890"><strong>+123 456 7890</strong></a></p>
-      <video controls width="320">
+      <p>Email: <a href="mailto:qui.huynh@example.com" class="contact-link"><strong>qui.huynh@example.com</strong></a>
+      </p>
+      <p>Phone: <a href="tel:+1234567890" class="contact-link"><strong>+123 456 7890</strong></a></p>
+      <video controls width="320" class="contact-video">
         <source src="../images/dance.MP4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </section>
   </main>
 
-  <footer>
+  <footer id="footer">
     <p>&copy; <strong>2024 Qui Huynh</strong>. <em>All Rights Reserved.</em></p>
   </footer>
 </body>

@@ -1,0 +1,160 @@
+/* General styles */
+body {
+	font-family: "Arial", sans-serif;
+	background: #f4f4f9;
+	margin: 0;
+	padding: 0 20px;
+	line-height: 1.6;
+	color: #333;
+}
+
+/* Header styles */
+#header {
+	text-align: center;
+	padding: 20px;
+	background: #55aad5;
+	color: white;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.profile-img {
+	border-radius: 50%;
+	margin: 10px 0;
+}
+
+.name {
+	font-size: 2.5rem;
+}
+
+.welcome-text {
+	font-size: 1.2rem;
+}
+
+/* Navigation styles */
+#navigation .nav-links {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	background: #333;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.nav-links li {
+	margin: 0 10px;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: inline-block;
+	transition: background 0.3s;
+}
+
+.nav-links a:hover {
+	background: #55aad5;
+	border-radius: 5px;
+}
+
+/* Main content styles */
+#main-content {
+	display: grid;
+	gap: 20px;
+}
+
+.section {
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-list li {
+	margin: 10px 0;
+}
+
+/* Experience */
+.experience-item {
+	margin-bottom: 15px;
+}
+
+/* Portfolio styles */
+#portfolio {
+	text-align: center;
+	background: #eee;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+#portfolio a {
+	text-decoration: none;
+	color: #55aad5;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+
+#portfolio a:hover {
+	color: #2e7d32;
+}
+
+/* Education styles */
+.education-table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.education-table th,
+.education-table td {
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.education-table th {
+	background: #55aad5;
+	color: white;
+}
+
+/* Contact styles */
+.contact-link {
+	color: #55aad5;
+	text-decoration: none;
+}
+
+.contact-link:hover {
+	text-decoration: underline;
+}
+
+.contact-video {
+	margin-top: 10px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+/* Footer styles */
+#footer {
+	text-align: center;
+	padding: 10px;
+	background: #333;
+	color: white;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+	#navigation .nav-links {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#main-content {
+		grid-template-columns: 1fr;
+	}
+
+	.education-table th,
+	.education-table td {
+		font-size: 0.9rem;
+	}
+}
