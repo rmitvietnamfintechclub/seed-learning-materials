@@ -1,0 +1,70 @@
+/* Reset some default styles */
+body,
+p,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply styles to the body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style the main container */
+.outside_container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.main_container {
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Style the input */
+#place_input {
+  width: 60%;
+  padding: 12px;
+  margin: auto;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #555555;
+}
+
+#place_input_btn {
+  padding: 8px;
+  margin: auto;
+  border-radius: 8px;
+  font-size: 16px;
+}
+/* Style the weather, location, and temperature sections */
+#weather {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #007bff;
+}
+
+#location_show,
+#temperature {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #444444;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .main_container {
+    width: 90%;
+  }
+}
